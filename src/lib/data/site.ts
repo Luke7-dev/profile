@@ -4,7 +4,7 @@ export const siteConfig = {
   title: "Senior Frontend Engineer",
   focus: "React · TypeScript · Next.js · Vue.js · Nuxt.js · NestJS · Node.js",
   tagline:
-    "10+ years designing and delivering scalable web apps, enterprise platforms, and SaaS products across Southeast Asia.",
+    "Yewin, Ye Win Aung is a Senior Frontend Engineer with 10+ years of experience designing and delivering scalable web apps, enterprise platforms, and SaaS products across Southeast Asia.",
   location: "Bangkok, Thailand",
   targetMarkets: "Open to opportunities in Singapore & Thailand",
   email: "yewinaung831@gmail.com",
