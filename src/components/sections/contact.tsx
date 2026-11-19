@@ -34,7 +34,7 @@ export function Contact() {
       id="contact"
       label="Contact"
       title="Open channel"
-      description="Open to senior frontend roles, contract work, and technical leadership in Singapore and Thailand."
+      description="Open to senior full-stack and LLM / AI engineering roles, contract work, and technical leadership — remote or relocation."
     >
       <FadeIn>
         <Panel

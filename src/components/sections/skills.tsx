@@ -11,7 +11,7 @@ export function Skills() {
       id="skills"
       label="Skills"
       title="Tech matrix"
-      description="Frontend-first toolkit with solid backend, cloud, and collaboration coverage."
+      description="Full-stack toolkit spanning LLM / AI services, backend APIs, and frontend architecture — with cloud, testing, and delivery coverage."
     >
       <div className="grid gap-3 sm:grid-cols-2">
         {skills.map((group, index) => (

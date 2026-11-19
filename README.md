@@ -1,6 +1,6 @@
 # Yewin — Personal Portfolio
 
-A minimal, dark-themed portfolio for a Senior Frontend Engineer. Built for recruiters in Singapore and Thailand.
+A minimal, dark-themed portfolio for a Senior Full-stack Engineer focused on LLM / AI engineering.
 
 ## Stack
 

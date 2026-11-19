@@ -69,7 +69,7 @@ export function Experience() {
       id="experience"
       label="Experience"
       title="Work history"
-      description="Roles across Bangkok and Yangon — enterprise platforms, loyalty, travel, and marketplaces."
+      description="Full-stack and frontend roles across Bangkok and Yangon, plus contract technical leadership — enterprise platforms, loyalty, travel, and marketplaces."
     >
       <div className="space-y-3">
         {experience.map((item, index) => (
@@ -92,10 +92,10 @@ export function Experience() {
               headerRight={
                 <div className="flex flex-col items-end gap-1.5">
                   <StatusChip
-                    tone={index === 0 ? "passes" : "muted"}
-                    pulse={index === 0}
+                    tone={item.current || index === 0 ? "passes" : "muted"}
+                    pulse={item.current}
                   >
-                    {index === 0 ? "Current" : "Past"}
+                    {item.current ? "Current" : index === 0 ? "Latest" : "Past"}
                   </StatusChip>
                   <span className="text-[11px] text-muted-foreground">
                     {item.period}
@@ -103,9 +103,11 @@ export function Experience() {
                 </div>
               }
             >
-              <p className="mb-3 text-xs text-muted-foreground">
-                @ {item.location}
-              </p>
+              {item.location && (
+                <p className="mb-3 text-xs text-muted-foreground">
+                  @ {item.location}
+                </p>
+              )}
               <ul className="space-y-2">
                 {item.highlights.map((highlight) => (
                   <li

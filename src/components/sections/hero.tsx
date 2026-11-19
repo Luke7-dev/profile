@@ -24,7 +24,7 @@ export function Hero() {
               System online
             </StatusChip>
             <StatusChip tone="info">{siteConfig.location}</StatusChip>
-            <StatusChip tone="lime">Senior FE</StatusChip>
+            <StatusChip tone="lime">Full-stack · AI</StatusChip>
           </div>
         </FadeIn>
 

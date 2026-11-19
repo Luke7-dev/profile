@@ -21,7 +21,7 @@ export function Projects() {
       id="projects"
       label="Projects"
       title="Selected deployments"
-      description="Enterprise platforms, loyalty systems, travel booking, and marketplace products."
+      description="LLM / RAG services, enterprise platforms, loyalty systems, travel booking, and marketplace products."
     >
       <div className="grid gap-3 md:grid-cols-2">
         {featured.map((project, index) => {
@@ -43,7 +43,9 @@ export function Projects() {
                     {project.engagement && (
                       <StatusChip tone="issues">{project.engagement}</StatusChip>
                     )}
-                    <StatusChip tone="info">Featured</StatusChip>
+                    <StatusChip tone={project.lead ? "lime" : "info"}>
+                      {project.lead ? "Lead" : "Featured"}
+                    </StatusChip>
                   </div>
                 }
               >

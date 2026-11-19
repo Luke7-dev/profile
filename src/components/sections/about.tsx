@@ -10,13 +10,18 @@ export function About() {
     { key: "focus", value: siteConfig.focus },
     { key: "languages", value: siteConfig.languages.join(" · ") },
     {
-      key: "education",
-      value: "M.C.Sc · Software Engineering · University of Mandalay",
+      key: "education[0]",
+      value:
+        "M.C.Sc · Computer Science (Software & Data Mining) · University Mandalay · 2013–2016",
+    },
+    {
+      key: "education[1]",
+      value: "Bachelor's · Computer Science · University Mandalay · 2010–2013",
     },
   ];
 
   return (
-    <Section id="about" label="About" title="Profile dossier">
+    <Section id="about" label="About" title="About Me">
       <FadeIn>
         <div className="grid gap-4 lg:grid-cols-[1fr_1.4fr]">
           <Panel title="meta.json" accent="info">
@@ -44,22 +49,29 @@ export function About() {
           >
             <div className="space-y-4 text-sm leading-relaxed text-muted-foreground">
               <p>
-                Senior Frontend Engineer with 10+ years designing, developing,
-                and delivering scalable web applications, enterprise platforms,
-                SaaS products, and customer-facing systems.
+                Senior Full-stack Engineer with 10+ years designing, developing,
+                and delivering scalable web applications, SaaS platforms,
+                enterprise systems, and customer-facing products.
               </p>
               <p>
-                Strong expertise in React, Vue, TypeScript, Next.js, and Nuxt.js
-                — with deep experience in frontend architecture, reusable
-                component systems, performance optimization, design systems, and
-                modern development practices. I work closely with Product
-                Managers, Business Analysts, QA, and backend teams to ship
-                complex business solutions.
+                Hands-on across the stack — Node.js, NestJS, REST APIs, MongoDB,
+                React, Vue, TypeScript, Next.js, and Nuxt.js — with recent work
+                building LLM-powered applications and AI services using Python,
+                FastAPI, RAG, embeddings, vector search, and grounded answer
+                generation. I design systems where business services and AI
+                capabilities are independently deployable: NestJS business APIs
+                alongside Python/FastAPI LLM and knowledge services.
               </p>
               <p>
-                Currently based in Bangkok and exploring senior frontend roles
-                in Singapore and Thailand — positions where I can lead
-                technically while staying close to the product.
+                A strong frontend background — architecture, reusable component
+                systems, design systems, and performance optimization — shapes
+                how I build. I lead delivery from requirements through
+                production, collaborate with product and business stakeholders,
+                mentor developers, and run code reviews.
+              </p>
+              <p>
+                Based in Bangkok and open to senior full-stack and LLM / AI
+                engineering roles — remote or relocation.
               </p>
             </div>
           </Panel>
